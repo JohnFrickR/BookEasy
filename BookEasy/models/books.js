@@ -8,8 +8,7 @@ const bookSchema = new mongoose.Schema({
     rating: Number,
     img: String,
     description: String,
-    genre: String,
-    link: String 
+    genre: String 
 },{timestamps: true})
 
 const Book = mongoose.model('Book',bookSchema)
