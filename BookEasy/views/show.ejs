@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/show.css">
     <title>Document</title>
 </head>
 <body>
     <h1><%=book.title%></h1>
-    <div>
-        <p><img src="<%=book.img%>" alt=""></p>
-        <p>This book costs <%=book.price %>$</p>
-        <br/>
-        <p>There are <%=book.qty %> copies of this book left</p>
-    </div>
     <nav>
-        <a href="/books">Back to Book Easy Main Page</a>
+        <a href="/books">
+           <button>Home</button> 
+        </a>
     </nav>
+    <div>
+        <p><img src="<%=book.img%>" alt=""><br/>
+        <%=book.title%> costs <%=book.price %>$
+        <br/>
+        There are <%=book.qty %> copies of this book left</p>
+    </div>
+    
 </body>
 </html>

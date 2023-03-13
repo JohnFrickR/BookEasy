@@ -1,0 +1,24 @@
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+img{
+    max-width: 200px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: blanchedalmond;
+}
+button{
+    background-color: antiquewhite;
+    font-size: large;
+}
