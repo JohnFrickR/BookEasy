@@ -10,16 +10,32 @@
 <body>
     <h1><%=book.title%></h1>
     <nav>
+        <button>
         <a href="/books">
-           <button>Home</button> 
+           Home
         </a>
+        </button> 
+        <% if(book.qty> 0){ %>
+      <form action="/books/<%=book.id%>/buy?_method=PUT" method="POST">
+          <input class='buy' type="submit" value="Buy"></input>
+        </form>
+          <% } else { %>
+             <a></a>
+              <% } %>
     </nav>
+
     <div>
-        <p><img src="<%=book.img%>" alt=""><br/>
-        <%=book.title%> costs <%=book.price %>$
-        <br/>
-        There are <%=book.qty %> copies of this book left</p>
+        <p><img src="<%=book.img%>" alt=""><br/><br/>
+        <%=book.title%> costs <%=book.price %>$ <br/><br/>
+        <% if(book.qty> 0){ %>
+            There are <%=book.qty %> copies of this book left
+          </p>
+          <% } else { %>
+             Not in stock</p>
+              <% } %>
     </div>
+
     
+
 </body>
 </html>

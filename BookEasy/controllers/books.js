@@ -53,15 +53,14 @@ router.put('/:id', (req, res) => {
 	});
 });
 router.put('/:id/buy', (req, res) => {
-    // res.send('I hit this route')
 	Book.findByIdAndUpdate(req.params.id,req.body, { new: true,}, 
 	(err,updatedBook) => {
 		if(err) {
 			console.log(err)
 			res.send(err)
 		} else {
-            updatedProduct.qty -= 1
-            updatedProduct.save()
+            updatedBook.qty -= 1
+            updatedBook.save()
 			console.log(updatedBook)
 			res.redirect('/books')
 		};

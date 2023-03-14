@@ -13,10 +13,12 @@
         <h1><%=book.title%></h1>
     </header>
     <nav>
+        <button>
         <a href="/books">
-           <button>Home</button> 
+           Home 
         </a>
-    </nav>
+        </button>
+    </nav><br/>
     
     <div>
         <form class="ed" action="/books/<%=book.id%>?_method=PUT" method="POST">
@@ -35,9 +37,7 @@
     <form action="/books/<%=book.id%>?_method=DELETE" method="POST">
         <input type="submit" value="Delete">
     </form>
-    <p>
-        <%=book.description%>
-    </p>
+
 </body>
 
 </html>

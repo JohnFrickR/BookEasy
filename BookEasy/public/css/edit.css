@@ -16,7 +16,6 @@ h1{
 nav{
     display: flex;
     justify-content: center;
-    background-color: blanchedalmond;
 }
 button{
     background-color: antiquewhite;
@@ -63,15 +62,10 @@ a{
     justify-content: center;
       color: rgb(196, 148, 67);
       text-decoration: none;
-      font-size: 2em;
-      text-shadow: black 2px 2px 2px;
+      font-size: 1.5em;
+      text-shadow: black 2px 1px 1px;
     }
     
-  a:hover {
+a:hover {
       color: ghostwhite;
     }
-/* div {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  } */
