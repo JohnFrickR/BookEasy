@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<title></title>
-	</head>
-	<body>
-		<h1>Welcome to Book Easy</h1>
-        <ul>
-            <% for(let i = 0; i < books.length; i++){ %>
-            <div>
-                <li>
-                    The <a href="/books/<%=books[i].id; %>">
-                        <%=books[i].title; %>
-                    </a> 
-                    |
-                    <a href="/books/<%=books[i].id%>/edit">Edit</a>
-                    is it worth reading? <%=books[i].worthReading;%>.
-                    <% if(books[i].worthReading === true){ %>
-                        It is worth reading
-                    <% } else { %>
-                        It is not worth reading
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/css/app.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Book Easy</h1>
+    </header>
+
+    <section>
+        <div class="container">
+            <% for(let i=0; i < books.length; i++){ %>
+                <div>
+                    <a href="/books/<%=books[i].id; %>">
+                            <%=books[i].title; %>
+                        </a> <br/>
+                        <img src="<%=books[i].img%>"><br/>
+                        <a href="/books/<%=books[i].id%>/edit">Edit</a><br/>
+                        Worth reading?
+                            <% if(books[i].worthReading===true){ %>
+                                It is worth reading
+                                <% } else { %>
+                                    It is not worth reading
+                                    <% } %><br/>
+                                    Genre: <%=books[i].genre%>
+                                    </div>
                     <% } %>
-                    <form action="/books/<%=books[i].id%>?_method=DELETE" method="POST">
-                        <input type="submit" value="Delete">
-                    </form>                    
-                </li>
-            </div>
-            <% } %>
-        </ul>
+                </div>
+        </section>
     <nav>
         <a href="/books/new">Add A New Book</a>
     </nav>
-	</body>
-</html> 
+</body>
+</html>

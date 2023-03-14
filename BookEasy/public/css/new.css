@@ -16,7 +16,6 @@ h1{
 nav{
     display: flex;
     justify-content: center;
-    background-color: blanchedalmond;
 }
 button{
     background-color: antiquewhite;

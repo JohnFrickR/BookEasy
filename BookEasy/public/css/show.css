@@ -21,3 +21,79 @@ button{
     background-color: antiquewhite;
     font-size: large;
 }
+div{
+    display: flex;
+    justify-content: center;
+    
+}
+
+img{
+    max-width: 200px;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: antiquewhite;
+    font-size: large;
+}
+body{
+    border: 10px solid rgb(91, 41, 41);
+    padding: 35px;
+    background: beige;
+    background-clip: content-box;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(207,232,220);
+    border: 2px solid rgb(121, 73, 73);
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(100px,auto);
+    gap: 20px;
+}
+
+article{
+    flex: 1;
+    border: solid black 10px;
+    background-color: bisque;
+}
+
+img{
+    max-width: 200px;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+      color: rgb(196, 148, 67);
+      text-decoration: none;
+      font-size: 2em;
+      text-shadow: black 2px 2px 2px;
+    }
+    
+  a:hover {
+      color: ghostwhite;
+    }
+/* div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  } */
