@@ -18,25 +18,28 @@
            Home 
         </a>
         </button>
+        <form action="/books/<%=book.id%>?_method=DELETE" method="POST">
+            <input class="delete" type="submit" value="Delete">
+        </form>
     </nav><br/>
     
     <div>
         <form class="ed" action="/books/<%=book.id%>?_method=PUT" method="POST">
-            Title: <input type="text" name="title" value="<%=book.title%>"/><br/>
-            Price: <input type="number" name="price" value="<%=book.price%>"/><br/>
-            Quantity: <input type="number" name="qty" value="<%=book.qty%>"/><br/>
-            Is It Worth Reading: <input type="checkbox" name="worthReading" <%
+            <p>Title:</p> <input type="text" name="title" value="<%=book.title%>"/><br/>
+            <p>Price:</p> <input type="number" name="price" value="<%=book.price%>"/><br/>
+            <p>Quantity:</p> <input type="number" name="qty" value="<%=book.qty%>"/><br/>
+            <p>Is It Worth Reading:</p> <input type="checkbox" name="worthReading" <%
             if(book.worthReading === true){ %> checked <% } %> /><br/>
-            Rating: <input type="number" name="rating" value="<%=book.rating%>"/><br/>
-            Image Link:<input type="text" name="img" value="<%=book.img%>"/><br/>
-            Description:<input type="text" name="description" value="<%=book.description%>"/><br />
-            Genre:<input type="text" name="genre" value="<%=book.genre%>"/><br/>
-            <input type="submit" name="" value="Submit Edit"/>
+            <p>Rating:</p> <input type="number" name="rating" value="<%=book.rating%>"/><br/>
+            <p>Image Link:</p><input type="text" name="img" value="<%=book.img%>"/><br/>
+            <p>Description:</p><input type="text" name="description" value="<%=book.description%>"/><br />
+            <p>Genre:</p><input type="text" name="genre" value="<%=book.genre%>"/><br/>
+            <p>Author:</p><input type="text" name="author" value="<%=book.author%>"/><br/>
+            <input class="submit" type="submit" name="" value="Submit Edit"/>
         </form>
+        
     </div>
-    <form action="/books/<%=book.id%>?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
-    </form>
+    
 
 </body>
 

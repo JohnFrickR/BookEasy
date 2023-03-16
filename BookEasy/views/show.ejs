@@ -26,13 +26,23 @@
 
     <div>
         <p><img src="<%=book.img%>" alt=""><br/><br/>
-        <%=book.title%> costs <%=book.price %>$ <br/><br/>
+        <%=book.title%>, Costs <%=book.price %>$ <br/><br/>
+
         <% if(book.qty> 0){ %>
-            There are <%=book.qty %> copies of this book left
-          </p>
+            There are <%=book.qty %> copies of this book left!<br/><br/>
           <% } else { %>
-             Not in stock</p>
+             Not in stock<br/>
               <% } %>
+
+             Is It Worth Reading?
+              <% if(book.worthReading===true){ %>
+                It is worth reading!<br/><br/>
+                <% } else { %>
+                    It is not worth reading!<br/><br/>
+                    <% } %>
+
+                Description: <%=book.description%>
+            </p>
     </div>
 
     

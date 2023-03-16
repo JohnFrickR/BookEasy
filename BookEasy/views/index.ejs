@@ -17,23 +17,22 @@
             <% for(let i=0; i < books.length; i++){ %>
                 <div>
                     <a href="/books/<%=books[i].id; %>">
-                            <%=books[i].title; %>
-                        </a> <br/>
-                        <img src="<%=books[i].img%>"><br/>
-                        <a href="/books/<%=books[i].id%>/edit">Edit</a><br/>
-                        Worth reading?
-                            <% if(books[i].worthReading===true){ %>
-                                It is worth reading
-                                <% } else { %>
-                                    It is not worth reading
-                                    <% } %><br/>
-                                    Genre: <%=books[i].genre%>
-                                    </div>
-                    <% } %>
+                        <%=books[i].title; %>
+                    </a> <br />
+                    <img src="<%=books[i].img%>"><br />
+                    <a href="/books/<%=books[i].id%>/edit">Edit</a><br />
+                    <article>
+                                 <p>Genre: <%=books[i].genre%><br/>
+                                    Price: <%=books[i].price%>$<br/>
+                            Author: <%=books[i].author%></p><br/>
+                    </article>
                 </div>
-        </section>
+                <% } %>
+        </div>
+    </section>
     <nav>
         <a href="/books/new">Add A New Book</a>
     </nav>
 </body>
+
 </html>

@@ -1,15 +1,21 @@
 div{
     display: flex;
     justify-content: center;
+    border: solid 1px black;
+    background-color: antiquewhite;
 }
 
 img{
     max-width: 200px;
+    display: flex;
+    margin: auto;
 }
 
 h1{
     display: flex;
     justify-content: center;
+    color: antiquewhite;
+    background-color: black;
 }
 
 nav{
