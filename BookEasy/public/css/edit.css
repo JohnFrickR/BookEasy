@@ -18,10 +18,12 @@ nav{
     display: flex;
     justify-content: center;
 }
+
 button{
     background-color: antiquewhite;
     font-size: large;
 }
+
 body{
     border: 10px solid rgb(91, 41, 41);
     padding: 35px;

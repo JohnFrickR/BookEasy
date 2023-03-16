@@ -10,18 +10,21 @@
 <body>
     <h1>Create A New Book Entry</h1>
     <nav>
-        <a href="/books">Back to Main Page</a>
+        <button>
+        <a href="/books">Home</a>
+        </button>
     </nav>
     <div>
         <form action="/books" method="POST">
-            Title: <input type="text" name="title" /><br />
-            Price: <input type="number" name="price" /><br />
-            Quantity: <input type="number" name="qty" /><br />
-            Is It Worth Reading: <input type="checkbox" name="worthReading" /><br />
-            Rating: <input type="number" name="rating" /><br />
-            Image Link:<input type="text" name="img" /><br />
-            Description:<input type="text" name="description" /><br />
-            Genre:<input type="text" name="genre" /><br />
+            <p>Title:</p> <input type="text" name="title" /><br />
+            <p>Price:</p> <input type="number" name="price" /><br />
+            <p>Quantity:</p> <input type="number" name="qty" /><br />
+            <p>Is It Worth Reading:</p> <input type="checkbox" name="worthReading" /><br />
+            <p>Rating:</p> <input type="number" name="rating" /><br />
+            <p>Image Link:</p><input type="text" name="img" /><br />
+            <p>Description:</p><input type="text" name="description" /><br />
+            <p>Genre:</p><input type="text" name="genre"/>
+                <br />
             <input type="submit" name="" value="Create Book"/>
         </form>
     </div>
