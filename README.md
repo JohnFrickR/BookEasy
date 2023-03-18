@@ -3,7 +3,6 @@
 Book Easy
 
 ## Project Description
-> Include:<br />
 > General App Idea/Purpose<br />
 
 The purpose behind this would be a way for someone to track the books they have read. They should be able to leave a short description about their thoughts on it, if it's worth reading, and how much the book was along with an image of it and where to find a copy. 
@@ -17,6 +16,7 @@ Rating: Number,
 img: String,
 Description: String,
 Genre: String
+Author: String
 } 
 
 
@@ -49,3 +49,9 @@ I want the Styling to look clean and to not be plain.
 ### Stretch Goals
 I want users to be able to log in and see their own book entries or log in and that's what gives them the editing abilities for the page.
 
+### What I Used
+I used bcrypt, dotenv, ejs, express, method-override, mongoose.
+
+### What I would do better
+I would like to add some better CSS styling, make user logins, and a shopping cart so it would be like a normal functioning site. 
+I would add connections between the data models, right now I'm not sure how to do that.
