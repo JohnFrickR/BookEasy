@@ -4,6 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Macondo&display=swap">
     <title></title>
 </head>
 
@@ -18,20 +20,20 @@
                 <div>
                     <a href="/books/<%=books[i].id; %>">
                         <%=books[i].title; %>
-                    </a> <br />
-                    <img src="<%=books[i].img%>"><br />
-                    <a href="/books/<%=books[i].id%>/edit">Edit</a><br />
+                    </a><br/>
+                    <img src="<%=books[i].img%>"><br/>
+                    <a href="/books/<%=books[i].id%>/edit">Edit</a><br/>
                     <article>
-                                 <p>Genre: <%=books[i].genre%><br/>
-                                    Price: <%=books[i].price%>$<br/>
-                            Author: <%=books[i].author%></p><br/>
+                                 <p>Genre: <%=books[i].genre%><br/><br/>
+                                    Price: <%=books[i].price%>$<br/><br/>
+                            Author: <%=books[i].author%></p><br/><br/>
                     </article>
                 </div>
                 <% } %>
         </div>
     </section>
     <nav>
-        <a href="/books/new">Add A New Book</a>
+        <a class="newBook" href="/books/new">Add A New Book</a>
     </nav>
 </body>
 

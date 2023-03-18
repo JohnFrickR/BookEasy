@@ -5,15 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/show.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Macondo&display=swap">
     <title>Document</title>
 </head>
 <body>
     <h1><%=book.title%></h1>
-    <nav>
+    <nav> 
         <button>
         <a href="/books">
            Home
-        </a>
+        </a> 
         </button> 
         <% if(book.qty> 0){ %>
       <form action="/books/<%=book.id%>/buy?_method=PUT" method="POST">
@@ -31,7 +33,7 @@
         <% if(book.qty> 0){ %>
             There are <%=book.qty %> copies of this book left!<br/><br/>
           <% } else { %>
-             Not in stock<br/>
+             Not in stock<br/><br/>
               <% } %>
 
              Is It Worth Reading?

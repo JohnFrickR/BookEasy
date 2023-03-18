@@ -11,12 +11,16 @@ img{
     margin: auto;
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    color: antiquewhite;
-    background-color: black;
-}
+
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: "Sofia", sans-serif;
+        font-size: 45px;
+        text-shadow: black 1px 1px 1px;
+        color: rgb(196, 148, 67);
+    }
+
 
 nav{
     display: flex;
@@ -69,10 +73,16 @@ input{
 input:hover{
     color:antiquewhite
 }
+
 form{
     margin: 5px;
     /* display: flex;
     align-items: center;
     margin: 10px;
     font-size: 1.5em; */
+}
+
+P{
+    font-family: 'Macondo', cursive;
+    font-size: 1.3em;
 }

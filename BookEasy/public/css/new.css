@@ -33,9 +33,13 @@ body{
 }
 
 h1{
-    display: flex;
-    justify-content: center;
-}
+        display: flex;
+        justify-content: center;
+        font-family: "Sofia", sans-serif;
+        font-size: 45px;
+        text-shadow: black 2px 2px 2px;
+        color: rgb(196, 148, 67);
+    }
 
 
 img{
